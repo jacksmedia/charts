@@ -3,21 +3,26 @@ import {Chart} from 'primereact/chart';
 
 class PieChartDemo extends Component {
 
+// Rmbr-- plz use many emojis! 
+// https://github.com/OxCGRT/USA-covid-policy/blob/master/data/OxCGRT_US_latest.csv
+
     render() {
         const data = {
-            labels: ['Goths 👩🏿‍🎤','Scenesters 🕺🏾','Hipsters 📼'],
+            labels: ['Oregon 🍩','Florida 🍊','Pennsylvania 🥨', 'California 🍱'],
             datasets: [
                 {
-                    data: [3500, 10000, 8000],
+                    data: [5, 26, 12, 20],
                     backgroundColor: [
                         "blueviolet",
-                        "aquamarine",
-                        "darkorange"
+                        "aqua",
+                        "green",
+                        "darkorange",
                     ],
                     hoverBackgroundColor: [
-                        "purple",
-                        "aqua",
-                        "orange"
+                        "violet",
+                        "aquamarine",
+                        "forestgreen",
+                        "orange",
                     ]
                 }]    
             };
@@ -26,8 +31,7 @@ class PieChartDemo extends Component {
             <div>
                 <div className="content-section introduction">
                     <div className="feature-intro">
-                        <h1>Populations in Neo PDX</h1>
-                        <p>Major tribes in the city, as surveilled.</p>
+                        <h1>Cases per 10,000 residents</h1>
                     </div>
                 </div>
 

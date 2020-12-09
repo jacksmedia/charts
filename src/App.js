@@ -15,12 +15,15 @@ class App extends Component {
           
           <img src={logo} className="App-logo" alt="logo" />
           <h1>
-            Infographics that React
+            COVID-19 by Select US States
           </h1>
+          <h3>
+            Data via <a href="https://www.bsg.ox.ac.uk/research/research-projects/coronavirus-government-response-tracker#data" target="_blank"></a>The University of Oxford's COVID-19 Government Response Tracker (OxCGRT)
+          </h3>
         </header>
         <PieChartDemo />
         <h3>
-          Stay tuned for more <code>PrimeReact</code> module tests!
+          Check back soon for more infographics & stay safe this winter!
         </h3>
       </div>
     );
