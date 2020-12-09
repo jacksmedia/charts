@@ -4,25 +4,33 @@ import {Chart} from 'primereact/chart';
 class PieChartDemo extends Component {
 
 // Rmbr-- plz use many emojis! 
-// https://github.com/OxCGRT/USA-covid-policy/blob/master/data/OxCGRT_US_latest.csv
+// https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data/United_States_medical_cases
 
     render() {
         const data = {
-            labels: ['Oregon 🍩','Florida 🍊','Pennsylvania 🥨', 'California 🍱'],
+            labels: [
+                'Florida 🍊',
+                'Oregon 🍩',
+                'Pennsylvania 🥨',
+                'Arizona 🌮',
+                'Minnesota 🥞'
+            ],
             datasets: [
                 {
-                    data: [5, 26, 12, 20],
+                    data: [7985, 1294, 8843, 12314, 2879],
                     backgroundColor: [
-                        "blueviolet",
-                        "aqua",
-                        "green",
+                        "violet",
+                        "gold",
+                        "forestgreen",
                         "darkorange",
+                        "darkslateblue",
                     ],
                     hoverBackgroundColor: [
-                        "violet",
-                        "aquamarine",
-                        "forestgreen",
+                        "plum",
+                        "beige",
+                        "limegreen",
                         "orange",
+                        "slateblue",
                     ]
                 }]    
             };
@@ -31,7 +39,12 @@ class PieChartDemo extends Component {
             <div>
                 <div className="content-section introduction">
                     <div className="feature-intro">
-                        <h1>Cases per 10,000 residents</h1>
+                        <h1>
+                            New Cases of COVID
+                        </h1>
+                        <h2>
+                            Logged on December 8th, 2020
+                        </h2>
                     </div>
                 </div>
 
