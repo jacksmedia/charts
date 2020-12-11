@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import PieChartDemo from './PieChartDemo.js';
-// import logo from './logo.svg';
+import logo from './logo.svg';
 
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
@@ -12,16 +12,16 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/*<img src={logo} className="App-logo" alt="logo" />*/}
+          <img src={logo} className="App-logo" alt="logo" />
           <h1>
             COVID-19 by Select US States
           </h1>
           <h3>
             Data via
-            <a href="https://en.wikipedia.org/wiki/Template:COVID-19_pandemic_data/United_States_medical_cases" 
+            <a href="https://api.covidtracking.com/" 
             target="_blank"
             rel="noopener noreferrer">
-              &nbsp;Wikipedia
+              &nbsp;The COVID Tracking Project at <em>The Atlantic</em>
             </a>
           </h3>
         </header>
